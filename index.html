@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sujit Moharkar — Data Science, Analytics, Python and AI/ML</title>
+<meta name="description" content="Portfolio of Sujit Moharkar, B.E. Artificial Intelligence and Data Science student at Savitribai Phule Pune University. Python, SQL, machine learning and local AI projects.">
+<meta property="og:title" content="Sujit Moharkar — Portfolio">
+<meta property="og:description" content="Turning data into intelligence. Building ideas into reality.">
+<meta name="theme-color" content="#0e0e11">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true"><b>SM</b><i></i></div>
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#home" class="logo" aria-label="Sujit Moharkar, home">SM</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#expertise">Expertise</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <span class="ind" id="ind"></span>
+  </nav>
+</header>
+
+<main>
+<!-- HERO: pinned stage, scroll drives the portrait -->
+<section id="home" class="stage" data-stage>
+  <div class="sticky">
+    <div class="glow"></div>
+    <h1 class="bigname" aria-label="Sujit Moharkar"><span id="n1">SUJIT</span><span id="n2">MOHARKAR</span></h1>
+
+    <figure class="photo" id="photo">
+      <img src="assets/profile.png" alt="Sujit Moharkar pointing towards the introduction" width="767" height="1200" fetchpriority="high">
+    </figure>
+
+    <div class="scene s1" id="s1">
+      <p class="role" aria-live="polite"><span id="role">Aspiring Data Scientist</span></p>
+      <p class="headline">Turning data into intelligence. Building ideas into reality.</p>
+      <p class="intro">I am an Artificial Intelligence and Data Science engineering student passionate about Python development, data analytics, machine learning, and building practical technology solutions.</p>
+      <div class="cta">
+        <a class="btn mag primary" href="assets/resume.pdf" download>Download resume</a>
+        <a class="btn mag" href="#projects">Explore projects</a>
+      </div>
+      <p class="links"><a href="https://github.com/sujit3233" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/sujit-moharkar-a3044a245" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="scene s2" id="s2">
+      <h2 class="kicker">About me</h2>
+      <p class="about">I am pursuing a B.E. in Artificial Intelligence and Data Science at Savitribai Phule Pune University. I am passionate about programming, data analysis, artificial intelligence, machine learning, and developing practical technology solutions.</p>
+      <dl class="facts">
+        <div><dt>Now</dt><dd>Third-year student, expected graduation 2027</dd></div>
+        <div><dt>Built</dt><dd>MeetMind AI, an offline speech and local-LLM prototype</dd></div>
+        <div><dt>Mindset</dt><dd>Learn a concept, then build something small with it</dd></div>
+        <div><dt>Goal</dt><dd>Internships and entry-level roles in data and AI</dd></div>
+      </dl>
+    </div>
+
+    <a class="scroll" id="scrollhint" href="#expertise" aria-label="Scroll to expertise"><span></span>Scroll</a>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div><span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Ollama</span><span>Faster-Whisper</span><span>Streamlit</span><span>SQLite</span><span>Git</span><span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Ollama</span><span>Faster-Whisper</span><span>Streamlit</span><span>SQLite</span><span>Git</span></div></div>
+
+<section id="expertise" class="wrap">
+  <h2 class="sec">My areas of expertise</h2>
+  <p class="note">Five paths I am building towards. What I have used in projects and what I am still learning are kept separate.</p>
+  <div class="dx">
+    <ul class="dlist" role="tablist" aria-label="Areas of expertise">
+      <li><button role="tab" aria-selected="true" data-i="0">Data Science</button></li>
+      <li><button role="tab" aria-selected="false" data-i="1">Data Analytics</button></li>
+      <li><button role="tab" aria-selected="false" data-i="2">Python Development</button></li>
+      <li><button role="tab" aria-selected="false" data-i="3">AI and Machine Learning</button></li>
+      <li><button role="tab" aria-selected="false" data-i="4">AI and Data Science</button></li>
+    </ul>
+    <div class="dpanel" id="dpanel" role="tabpanel" aria-live="polite">
+      <div class="dviz" id="dviz"></div>
+      <div class="dtext">
+        <p id="ddesc"></p>
+        <p class="tags"><em>Focus</em><span id="dfocus"></span></p>
+        <p class="tags"><em>Tools</em><span id="dtools"></span></p>
+        <p class="tags"><em>Related project</em><span id="dproj"></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <h2 class="sec">Technical skills</h2>
+  <p class="note">Taken from my resume. No percentages: each item is either something I have used or is marked as still being learned.</p>
+  <div class="skills">
+    <div><h3>Programming and databases</h3><ul><li>Python</li><li>SQL</li><li>MySQL</li><li>SQLite</li></ul></div>
+    <div><h3>Data analysis and ML</h3><ul><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Scikit-learn</li><li>Data science fundamentals</li><li>Machine learning fundamentals</li></ul></div>
+    <div><h3>AI application tools</h3><ul><li>Faster-Whisper</li><li>Ollama (local LLM)</li><li>Streamlit</li><li>FFmpeg</li></ul></div>
+    <div><h3>Developer tools</h3><ul><li>Git</li><li>GitHub</li><li>Jupyter Notebook</li></ul></div>
+    <div><h3>Currently learning</h3><ul class="learn"><li>Power BI</li><li>TensorFlow</li><li>PyTorch</li></ul></div>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <h2 class="sec">Featured projects</h2>
+  <article class="proj">
+    <div class="pv pv1" aria-hidden="true"><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p>audio → transcript → summary, all on the local machine</p></div>
+    <div class="pi">
+      <h3>MeetMind AI</h3><p class="cat">Local AI, meeting intelligence, productivity</p>
+      <p>An AI-powered meeting and study assistant prototype built in phases. It processes everything offline, so audio and transcripts stay on the local machine.</p>
+      <ul>
+        <li>Live microphone and recorded-audio transcription with Faster-Whisper</li>
+        <li>FFmpeg audio processing in the pipeline</li>
+        <li>Meeting summaries and key points from a local LLM through Ollama</li>
+        <li>Beginner-friendly explanations of complex discussions</li>
+        <li>Streamlit interface, SQLite history and a saved-meetings dashboard</li>
+        <li>Ask MeetMind: search across saved meeting content</li>
+      </ul>
+      <p class="stack">Python, Streamlit, Faster-Whisper, Ollama, SQLite, FFmpeg</p>
+      <p class="meta">Status: prototype, enhancements ongoing · <a href="https://github.com/sujit3233" target="_blank" rel="noopener">GitHub profile</a></p>
+    </div>
+  </article>
+  <article class="proj">
+    <div class="pv pv3" aria-hidden="true"><div class="brand">Snaxora</div></div>
+    <div class="pi">
+      <h3>Snaxora</h3><p class="cat">Branding, web design, food business</p>
+      <p>A front-end website for a snacks and wafers brand, focused on product presentation, brand identity and site structure.</p>
+      <ul><li>Product presentation</li><li>Brand identity</li><li>Website structure</li></ul>
+      <p class="stack">HTML, CSS</p>
+      <p class="meta">Status: source code published on GitHub · <a href="https://github.com/sujit3233" target="_blank" rel="noopener">GitHub profile</a></p>
+    </div>
+  </article>
+  <article class="proj">
+    <div class="pv pv2" aria-hidden="true"><div class="ph"><b></b><b></b><b></b><b></b></div></div>
+    <div class="pi">
+      <h3>SujitX</h3><p class="cat">Productivity, personal life management, iOS</p>
+      <p>A personal app concept for organizing study, gym, habits, goals and daily activities.</p>
+      <ul><li>Dashboard and daily planner</li><li>Tasks, goals and habits</li><li>Analytics</li></ul>
+      <p class="stack">SwiftUI, iOS, local data storage</p>
+      <p class="meta">Status: personal project, not listed on my resume</p>
+    </div>
+  </article>
+</section>
+
+<section id="education" class="wrap">
+  <h2 class="sec">Education</h2>
+  <ol class="tl">
+    <li><b>Expected 2027</b><div><h3>B.E. Artificial Intelligence and Data Science</h3><p>Savitribai Phule Pune University<br>SGPA 9.14</p></div></li>
+    <li><b>School</b><div><h3>Class XII: 86%, Class X: 81%</h3></div></li>
+  </ol>
+  <h3 class="sub">Learning journey</h3>
+  <p class="chips"><span>Python programming</span><span>SQL databases</span><span>Data science fundamentals</span><span>Data analytics</span><span>Artificial intelligence</span><span>Machine learning</span></p>
+  <p class="note" style="margin-top:2rem">I keep a public GitHub repository of coding assignments and practice exercises covering HTML, CSS, Python, Git, SQL and data science.</p>
+</section>
+
+<section class="wrap">
+  <h2 class="sec">What’s next?</h2>
+  <p class="big">I am preparing for my first professional step and looking for a team where I can learn quickly and contribute.</p>
+  <ul class="goals"><li>Data Science internships</li><li>Data Analyst internships</li><li>Python Developer internships</li><li>AI/ML internships</li><li>Junior Data Analyst roles</li><li>Entry-level AI and Data Science roles</li></ul>
+</section>
+
+<section id="contact" class="wrap contact">
+  <h2 class="sec">Contact</h2>
+  <p class="big">Have an internship, project or idea to discuss? Let’s talk.</p>
+  <a class="mail" href="mailto:sujitmoharkar0070@gmail.com">sujitmoharkar0070@gmail.com</a>
+  <div class="cta">
+    <a class="btn mag primary" href="tel:+918767943285">+91 8767943285</a>
+    <a class="btn mag" href="https://www.linkedin.com/in/sujit-moharkar-a3044a245" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn mag" href="https://github.com/sujit3233" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><span>Sujit Moharkar</span><span>© <script>document.write(new Date().getFullYear())</script> All rights reserved</span><a href="#home">Back to top ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
